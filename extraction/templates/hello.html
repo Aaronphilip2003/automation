@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Process Files</title>
+</head>
+<body>
+    <h1>Process Files</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="dataset" accept=".shp"><br>
+        <input type="file" name="point" accept=".shp"><br>
+        <input type="submit" value="Process Files">
+    </form>
+</body>
+</html>
